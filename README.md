@@ -7,3 +7,7 @@ Proyecto con stack React, Express, Node.JS y MySql
 4.En otra terminal abierta sobre originsoftlaredoAPI tambien debera correr "npm install"
 5.Luego de esto ejecute "npm start" lo que levantará el servidor de la API en el puerto 4000 donde se consultará los usuarios existentes al momento del login.
 
+Salvedades:
+Me quedaron algunas cosas para pulir, las mas grandes me parece que son el routeo y autenticacion. Estos temas sé que son importantes pero me presentaron complicaciones que ponian en riesgo la entrega a tiempo por lo que decidi dejarlos a un lado para avanzar con el proyecto.
+Las otras partes del proyecto que le faltan pulir son las validaciones y disposicion de los botones e inputs en la pantalla de los detalles. Ya que no tuve mucho tiempo para analizar la API o para centrarme en lo visual, me parecio lo mas sincero priorizar la funcionalidad sobre esto. 
+Espero sepan comprender.

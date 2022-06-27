@@ -20,13 +20,6 @@ const useStyles = makeStyles(theme => ({
     opacity: "50%",
     marginTop: theme.spacing(10),
     backgroundColor: "white",
-    //si el tema que se esta usando es menor a 400 pixeles, se le pasa para que el grid de login sea la pantalla entera.
-    //Esto hace que en celulares, aparezca el grid del login entero sin background, pero en la pc no
-    // [theme.breakpoints.down(400+theme.spacing(2)+2)]:{
-    //   marginTop:0,
-    //   width:'100%',
-    //   height:'100%'
-    // },
   },
 }
 ))
@@ -151,7 +144,7 @@ function Layout() {
           </Box>
         </div> : ''}
         {vista === "detalleSimbolo" ? <><DetalleSimbolo simbolo={rowSeleccionada.symbol}></DetalleSimbolo> 
-        <Button fullwidht variant="contained" color="secondary" onClick={()=>setVista("seleccionSimbolos")}>Atras</Button>
+        <Button variant="contained" color="secondary" onClick={()=>setVista("seleccionSimbolos")}>Atras</Button>
          </>
         : ''}
       </Container>

@@ -40,11 +40,9 @@ function Layout() {
   const [rowSeleccionada, setRowSeleccionada] = useState();
 
   const handleComboSimbolo = (event, value) => {
-    debugger
     setComboSimbolo(value);
   };
   const handleEliminar = (event, value, caca) => {
-    debugger
     const index = rows.findIndex(({ symbol }) => { debugger; return symbol === event.row.symbol });
     if (index !== -1) {
       setRows([
@@ -52,7 +50,6 @@ function Layout() {
         ...rows.slice(index + 1)
       ]);
     }
-    // setRows(oldArray => [...oldArray, {oldArray.filter(item=>{item === event})}]);
   };
   const handleAgregar = (e, value) => {
     if (comboSimbolo != null && !rows.find((row) => { debugger; return row.symbol === comboSimbolo.symbol })) {
@@ -61,7 +58,6 @@ function Layout() {
   }
 
   const handleRowClick = (detalle, e) => {
-    debugger;
     setRowSeleccionada(detalle.row);
     setVista("detalleSimbolo");
 
@@ -101,7 +97,6 @@ function Layout() {
     },
   ]
 
-  // var rows = [];
   var options = [];
   if (simbolos) {
     options = simbolos.map(item => {
